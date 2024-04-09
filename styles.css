@@ -1,0 +1,91 @@
+:root {
+    --background-color: #08182b;
+    --main-background-color: #424242;
+    --text-color: #f4f4f4;
+    --button-color: #45d9fd;
+    --accent-color: #ee2560;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: min(100vw, 80%);
+    margin: 0 auto;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  #heading {
+    margin-top: 0;
+  }
+  
+  #input {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    max-width: 250px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 15px solid var(--background-color);
+  }
+  
+  #input label {
+    font-size: 1.2em;
+  }
+  
+  #user-input {
+    height: 10%;
+    padding: 0 5px;
+    border: 2px solid var(--background-color);
+  }
+  
+  #user-input, #results-div {
+    padding: 7px;
+    width: 90%;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: 1.3em;
+    border-radius: 2px;
+  }
+  
+  #btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 11rem;
+    gap: 10px;
+  }
+  
+  #check-btn, #clear-btn {
+    background-color: var(--button-color);
+    color: var(--background-color);
+    border-radius: 2px;
+    font-size: 1.1em;
+    padding: 5px;
+  }
